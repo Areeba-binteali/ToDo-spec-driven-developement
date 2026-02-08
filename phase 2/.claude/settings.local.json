@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(sp.constitution)",
+      "Bash(git fetch --all --prune)",
+      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Bash(.specify/scripts/bash/setup-plan.sh)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks)",
+      "Bash(python -m src.main)",
+      "Bash(pip install -r requirements.txt)",
+      "Bash(npm install)",
+      "Bash(npm run dev)",
+      "Bash(npx next dev)",
+      "Bash(npm install -D tailwindcss postcss autoprefixer)",
+      "Bash(npx tailwindcss init -p)",
+      "Bash(dir *.env *.config *.yml *.yaml *.json /s)",
+      "Bash(tasklist)",
+      "Bash(findstr python)",
+      "Bash(findstr :8000)",
+      "Bash(dir)",
+      "Bash(python -m uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload)",
+      "Bash(curl -X POST http://localhost:8000/api/v1/auth/register -H \"Content-Type: application/json\" -d \"{\"\"email\"\":\"\"test@example.com\"\",\"\"password\"\":\"\"TestPass123\"\"}\")",
+      "Bash(python -c \"from src.main import app; import uvicorn; uvicorn.run\\(app, host=''0.0.0.0'', port=8000, log_level=''debug''\\)\")",
+      "Bash(curl -X POST http://localhost:8000/api/v1/auth/register -H \"Content-Type: application/json\" -d \"{\"\"email\"\":\"\"test@example.com\"\",\"\"password\"\":\"\"Short123\"\"}\")",
+      "Bash(curl -X POST http://localhost:8000/api/v1/auth/register -H \"Content-Type: application/json\" -d \"{\"\"email\"\":\"\"test@example.com\"\",\"\"password\"\":\"\"Pass1234\"\"}\")",
+      "Bash(pip uninstall bcrypt)",
+      "Bash(pip install bcrypt)",
+      "Bash(pip install bcrypt==4.0.1)",
+      "Bash(curl -X POST http://localhost:8000/api/v1/auth/login -H \"Content-Type: application/json\" -d \"{\"\"email\"\":\"\"test@example.com\"\",\"\"password\"\":\"\"Pass1234\"\"}\")",
+      "Bash(timeout 10 cat:*)",
+      "Bash(curl:*)",
+      "Bash(netstat:*)",
+      "Bash(taskkill:*)",
+      "Bash(powershell \"Get-NetTCPConnection -LocalPort 8000 | Select-Object -ExpandProperty OwningProcess | ForEach-Object {Stop-Process -Id $_-Force}\")",
+      "Bash(powershell:*)",
+      "Bash(timeout:*)"
+    ]
+  }
+}

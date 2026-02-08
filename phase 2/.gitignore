@@ -1,0 +1,74 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+.env
+
+# Builds
+build/
+dist/
+*.egg
+*.egg-info/
+.installed.cfg
+*.egg-info/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime
+.coverage
+coverage.xml
+*.cover
+*.db
+*.db-journal
+.pytest_cache/
+.nyc_output/
+coverage/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment variables
+.env*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Next.js
+.next/
+out/
+
+# Testing
+coverage/
+*.gcda
+*.gcno
+
+# Database
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Secrets
+secrets/
+*.key
+*.pem
