@@ -33,7 +33,10 @@
       "Bash(taskkill:*)",
       "Bash(powershell \"Get-NetTCPConnection -LocalPort 8000 | Select-Object -ExpandProperty OwningProcess | ForEach-Object {Stop-Process -Id $_-Force}\")",
       "Bash(powershell:*)",
-      "Bash(timeout:*)"
+      "Bash(timeout:*)",
+      "Bash(python -m pip install:*)",
+      "Bash(python -m uvicorn:*)",
+      "Bash(lsof:*)"
     ]
   }
 }

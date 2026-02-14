@@ -9,7 +9,7 @@ app = FastAPI(title="Todo App API", version="1.0.0")
 # Add CORS middleware to allow requests from frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3006", "http://localhost:3007", "http://127.0.0.1:3006", "http://127.0.0.1:3007"],  # Allow specific frontend origins
+    allow_origins=["*"],  # Allow all origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -35,4 +35,4 @@ def health_check():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)
